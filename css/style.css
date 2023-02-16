@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    max-width: 26.5vw;
+
+    border-radius: 5px;
+}
+
+h2,
+p {
+    margin: 30px 0 0;
+}
+
+p,
+span {
+    color: red;
+}
+
+.slider {
+    max-width: 80vw;
+    margin: 15px auto;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    box-shadow: 0 2px 5px 0 #00000030;
+}
+
+.slick-slider button {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slick-slider button:hover,
+.slick-slider button:focus {
+    background: white;
+}
+
+.slick-slider .slick-prev::before {
+    font-weight: 900;
+    font-size: 35px;
+    color: red;
+    position: relative;
+    top: 2px;
+}
+
+.slick-slider .slick-next::before {
+    font-weight: 900;
+    font-size: 35px;
+    color: red;
+    position: relative;
+    top: 2px;
+    z-index: 10;
+}
+
+.slick-slide {
+    color: #333;
+    padding: 40px 0;
+    font-size: 1.2em;
+    text-align: center;
+    pointer-events: none;
+}
+
+.slick-slide .details {
+    opacity: 0;
+}
+
+.slick-slide .details>* {
+    transition: all 900ms ease;
+}
+
+.slick-slide .details h2 {
+    position: relative;
+    left: 50px;
+    line-height: 1;
+}
+
+.slick-slide .details p {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 1px;
+    background: #666;
+    margin: 10px 5px;
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+    background: red;
+}
+
+.slick-dots button::before {
+    display: none;
+}
+
+.slick-slide {
+    opacity: .1;
+    transition: all 300ms ease;
+    transform: scale(0.9);
+}
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1.03);
+    /* padding: 30px; */
+}
+
+.slick-current .details {
+    opacity: 1;
+}
+
+.slick-current .details h2 {
+    left: 0;
+}
+
+.slick-current .details p {
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.btn {
+    color: black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid red;
+    font-size: .7em;
+    display: block;
+    margin: 30px auto 0;
+    text-decoration: none;
+    max-width: 100px;
+    width: 100%;
+    font-weight: bold;
+    pointer-events: initial;
+}
+
+.btn:hover {
+    color: white;
+    background: red;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    .slick-slider .slick-prev::before,
+    .slick-slider .slick-next::before {
+        font-size: 25px;
+    }
+
+.slick-slide {
+    font-size: 1em;}
+}
